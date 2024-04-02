@@ -55,6 +55,21 @@ dot(){
   fi
 }
 
+alias zotgit='git -C ~/Zotero/storage/'
+alias zotpull='git -C ~/.logseq/ pull'
+
+zotPushFn() {
+    git -C ~/Zotero/storage/ add .
+    git -C ~/Zotero/storage/ commit -m "laptop"
+    git -C ~/Zotero/storage/ push
+}
+
+alias zotpush=zotPushFn
+
+
+
+
+
 alias ls='ls --color=auto'
 alias ll='ls -lav --ignore=..'   # show long listing of all except ".."
 alias l='ls -lav --ignore=.?*'   # show long listing but no hidden dotfiles except "."
