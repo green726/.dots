@@ -1,0 +1,38 @@
+.ws {
+	font-size: 1.1em;
+	font-family: "FiraCode Nerd Font";
+	margin: .5em .5em .5em .5em;
+	padding: .25em .5em .25em .5em;
+	border-radius: 12px;
+	background-color: $darker-background;
+
+    .workspace-entry--occupied {
+        padding: .25em .5em .25em .25em;
+	    margin: .15em .5em .15em .5em;
+	    border-radius: 10px;
+	    // color: $mauve;
+    }
+
+    .workspace-entry--empty {
+        padding: .25em .5em .25em .25em;
+	    margin: .15em .5em .15em .5em;
+	    border-radius: 12px;
+        color: $lighter-background;
+    }
+
+
+    .workspace-entry-current-occupied {
+        padding: .25em .5em .25em .25em;
+	    margin: .15em .5em .15em .5em;
+	    border-radius: 12px;
+	    color: $maroon;
+    }
+
+    .workspace-entry-current-empty {
+        padding: .25em .5em .25em .25em;
+	    margin: .15em .5em .15em .5em;
+	    border-radius: 12px;
+        color: $lighter-background;
+    }
+
+}
