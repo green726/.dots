@@ -734,9 +734,9 @@ awful.rules.rules = {
             buttons = clientbuttons,
             screen = awful.screen.preferred,
             placement = awful.placement.no_overlap + awful.placement.no_offscreen,
-            size_hints_honor = false
-            -- tag = _tags_[8],
-            -- switchtotag = true,
+            size_hints_honor = false,
+            tag = _tags_[8],
+            switchtotag = true,
 
         },
 
@@ -779,27 +779,27 @@ awful.rules.rules = {
     },
 
     --Custom tag mappings
-    
-    -- { rule = { class = "Kitty" }, properties = { tag = _tags_[1], switchtotag = true } },
-    -- { rule = { class = "kitty" }, properties = { tag = _tags_[1], switchtotag = true } },
-    -- { rule = { class = "Alacritty" }, properties = { tag = _tags_[1], switchtotag = true } },
-    -- { rule = { class = "Firefox" }, properties = { tag = _tags_[4], switchtotag = true } },
-    -- { rule = { class = "firefox" }, properties = { tag = _tags_[4], switchtotag = true } },
-    -- { rule = {class = "chrome"}, properties = {tag = _tags_[4], switchtotag = true} },
-    -- { rule = {class = "Chrome"}, properties = {tag = _tags_[4], switchtotag = true} },
-    -- { rule = {class = "Google-Chrome"}, properties = {tag = _tags_[4], switchtotag = true} },
-    -- -- { rule = { class = "Unity" }, properties = { tag = _tags_[5], switchtotag = true } },
-    -- -- {rule = {class = "unity-hub"}, properties = {tag = _tags_[5], switchtotag = true}},
-    -- -- {rule = {class = "unityhub"}, properties = {tag = _tags_[5], switchtotag = true}},
-    -- -- {rule = {class = "UnityHub"}, properties = {tag = _tags_[5], switchtotag = true}},
-    -- { rule = { class = "Neovim" }, properties = { tag = _tags_[2], switchtotag = true } },
-    -- { rule = { class = "nvim-qt" }, properties = { tag = _tags_[2], switchtotag = true } },
-    -- { rule = { class = "idea"}, properties = {tag = _tags_[2], switchtotag = true}},
-    -- { rule = { class = "Steam" }, properties = { tag = _tags_[5], switchtotag = true } },
-    -- { rule = { class = "discord" }, properties = { tag = _tags_[6], switchtotag = true } },
-    -- { rule = { class = "dolphin" }, properties = { tag = _tags_[7], switchtotag = true } },
-    -- { rule = { class = "Thunar" }, properties = { tag = _tags_[7], switchtotag = true } },
-    -- { rule = { class = "GitHub Desktop" }, properties = { tag = _tags_[3], switchtotag = true } },
+    { rule = { class = "Kitty" }, properties = { tag = _tags_[1], switchtotag = true } },
+    { rule = { class = "kitty" }, properties = { tag = _tags_[1], switchtotag = true } },
+    { rule = { class = "Alacritty" }, properties = { tag = _tags_[1], switchtotag = true } },
+    { rule = { class = "Firefox" }, properties = { tag = _tags_[4], switchtotag = true } },
+    { rule = { class = "firefox" }, properties = { tag = _tags_[4], switchtotag = true } },
+    { rule = {class = "chrome"}, properties = {tag = _tags_[4], switchtotag = true} },
+    { rule = {class = "Chrome"}, properties = {tag = _tags_[4], switchtotag = true} },
+    { rule = {class = "Google-Chrome"}, properties = {tag = _tags_[4], switchtotag = true} },
+    -- { rule = { class = "Unity" }, properties = { tag = _tags_[5], switchtotag = true } },
+    -- {rule = {class = "unity-hub"}, properties = {tag = _tags_[5], switchtotag = true}},
+    -- {rule = {class = "unityhub"}, properties = {tag = _tags_[5], switchtotag = true}},
+    -- {rule = {class = "UnityHub"}, properties = {tag = _tags_[5], switchtotag = true}},
+    { rule = { class = "Neovim" }, properties = { tag = _tags_[2], switchtotag = true } },
+    { rule = { class = "nvim-qt" }, properties = { tag = _tags_[2], switchtotag = true } },
+    { rule = { class = "idea"}, properties = {tag = _tags_[2], switchtotag = true}},
+    { rule = { class = "Steam" }, properties = { tag = _tags_[5], switchtotag = true } },
+    { rule = { class = "discord" }, properties = { tag = _tags_[6], switchtotag = true } },
+    { rule = { class = "dolphin" }, properties = { tag = _tags_[7], switchtotag = true } },
+    { rule = { class = "Thunar" }, properties = { tag = _tags_[7], switchtotag = true } },
+    { rule = { class = "GitHub Desktop" }, properties = { tag = _tags_[3], switchtotag = true } },
+
 }
 
 -- }}}

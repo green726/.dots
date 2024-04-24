@@ -46,17 +46,12 @@
 (defpoll batperc :interval "25s"
         `sh ./scripts/getBattery.sh capacity`)
 
-(defvar battery_reveal false)
+(defvar battery_reveal true)
 
 (defwidget battery []
     (eventbox 
-        :onhover "eww update battery_reveal=true"
-        :onhoverlost "eww update battery_reveal=false"
 	        (box :class "battery" :orientation "h" :space-evenly "false" :halign "center"
             (overlay 
-            (revealer :transition "crossfade" :reveal {!battery_reveal} :duration "100ms" :class "battery-icon"
-                 baticon
-             )
                (revealer :transition "crossfade" :reveal battery_reveal :duration "100ms"
                 batperc
                )

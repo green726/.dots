@@ -70,7 +70,6 @@ alias zotpush=zotPushFn
 
 
 
-alias ls='ls --color=auto'
 alias ll='ls -lav --ignore=..'   # show long listing of all except ".."
 alias l='ls -lav --ignore=.?*'   # show long listing but no hidden dotfiles except "."
 [[ "$(whoami)" = "root" ]] && return
@@ -115,8 +114,8 @@ _open_files_for_editing() {
 ################################################################################
 export TERM=kitty
 alias ls='lsd -a'
+alias batinfo='bat /sys/class/power_supply/BAT0/capacity'
 alias awesomecon='nvim-qt ~/.config/awesome'
-alias gitdots='sudo rm -rf ~/dotfiles/configs/* | sudo cp -r ~/.config ~/dotfiles/configs/'
 alias mirror-update='export TMPFILE="$(mktemp)"; \
     sudo true; \
     rate-mirrors --save=$TMPFILE arch --max-delay=43200 \
@@ -171,6 +170,7 @@ export PATH=$PATH:~/coding/SWO/Language/bin/Debug/net6.0/linux-x64/
 
 export PATH=$PATH:~/.ghcup/bin/
 export PATH=$PATH:~/.ghcup/ghc/9.2.4/bin/
+export PATH=$PATH:~/wsudo-dir/
 
 export PATH=$PATH:/usr/lib/jvm/java-17-openjdk/bin
 # export WLR_RENDERER_ALLOW_SOFTWARE=1
